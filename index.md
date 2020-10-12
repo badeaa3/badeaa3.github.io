@@ -20,11 +20,7 @@ keywords:
             Email: abadea@g.harvard.edu<br/>
         </div>
 
-        <div class="span2">
-        <a href="../assets/headshot.jpg">
-            <img src="../assets/chalkboard-headshot.png"
-                  title="Anthony Badea" alt="Anthony Badea" width="1000"/></a>
-        </div>
+        <img src="../assets/chalkboard-headshot.png" title="Anthony Badea" alt="Anthony Badea" width="1000" height="1000"/>
     </div>
 </div>
 
