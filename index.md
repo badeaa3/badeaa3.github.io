@@ -23,7 +23,7 @@ keywords:
         <div class="span2">
         <a href="../assets/headshot.jpg">
             <img src="../assets/chalkboard-headshot.png"
-                  title="Anthony Badea" alt="Anthony Badea" width="200"/></a>
+                  title="Anthony Badea" alt="Anthony Badea" width="1000"/></a>
         </div>
     </div>
 </div>
