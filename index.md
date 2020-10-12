@@ -1,8 +1,8 @@
 ---
 layout: frontpage
 title: Anthony Badea
-description: Blue Ham is a PhD candidate at Broom University. 
-keywords: Blue, Ham, treats, recycling, mail, being a good boy
+description: 
+keywords: 
 ---
 
 [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
@@ -23,7 +23,7 @@ keywords: Blue, Ham, treats, recycling, mail, being a good boy
         <div class="span2">
         <a href="../assets/headshot.jpg">
             <img src="../assets/chalkboard-headshot.png"
-                  title="Anthony Badea" alt="Anthony Badea"/></a>
+                  title="Anthony Badea" alt="Anthony Badea" width="200"/></a>
         </div>
     </div>
 </div>
