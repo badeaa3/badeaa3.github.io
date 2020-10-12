@@ -15,12 +15,11 @@ keywords:
 <h4><a name="contact"></a>contact</h4>
 
     <div class="row-fluid">
-        <div class="span5">
-            Anthony Badea<br/>
-            Email: abadea@g.harvard.edu<br/>
-        </div>
-
-        <img src="../assets/chalkboard-headshot.png" title="Anthony Badea" alt="Anthony Badea" width="1000" height="1000"/>
+      <img src="../assets/chalkboard-headshot.png" title="Anthony Badea" alt="Anthony Badea" width="200" height="200"/>
+      <div class="span5">
+          Anthony Badea<br/>
+          Email: abadea@g.harvard.edu<br/>
+      </div>
     </div>
 </div>
 
