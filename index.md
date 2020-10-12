@@ -22,7 +22,7 @@ keywords: Blue, Ham, treats, recycling, mail, being a good boy
 
         <div class="span2">
         <a href="../assets/headshot.jpg">
-            <img src="../assets/chalkboard-headshot.jpg"
+            <img src="../assets/chalkboard-headshot.png"
                   title="Anthony Badea" alt="Anthony Badea"/></a>
         </div>
     </div>
