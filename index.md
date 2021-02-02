@@ -22,13 +22,15 @@ keywords:
       </div>
     </div>
 </div>
+<h1>List of talks</h1>
 <p>
-This paragraph
-contains a lot of lines
-in the source code,
-but the browser 
-ignores it.
-</p>  
+Talk 1 </br>
+Talk 2 </br>
+Talk 3 </br>
+Talk 4 </br>
+Talk 5 </br>
+</p>
+<hr>
 
 <!-- <div class="navbar">
   <div class="navbar-inner">
