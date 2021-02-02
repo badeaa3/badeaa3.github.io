@@ -24,11 +24,11 @@ keywords:
 </div>
 <h1>List of talks</h1>
 <p>
-Talk 1 </br>
-Talk 2 </br>
-Talk 3 </br>
-Talk 4 </br>
-Talk 5 </br>
+Talk 1 <br>
+Talk 2 <br>
+Talk 3 <br>
+Talk 4 <br>
+Talk 5 <br>
 </p>
 <hr>
 
