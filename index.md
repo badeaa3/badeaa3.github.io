@@ -22,6 +22,13 @@ keywords:
       </div>
     </div>
 </div>
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser 
+ignores it.
+</p>  
 
 <!-- <div class="navbar">
   <div class="navbar-inner">
