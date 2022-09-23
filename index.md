@@ -22,13 +22,23 @@ keywords:
       </div>
     </div>
 </div>
-<h1>List of talks</h1>
+<h1>Publications</h1>
 <p>
-Talk 1 <br>
-Talk 2 <br>
-Talk 3 <br>
-Talk 4 <br>
-Talk 5 <br>
+- Solving Combinatorial Problems at Particle Colliders Using Machine Learning, arx:2201.02205, Jan. 2022 <br>
+- Validating and Modeling the Impact of High-Frequency Rapid Antigen Screening on COVID-19 Spread and 
+Outcomes, Journal of Clinical Trials Vol. 11 Iss. 6 No: 1000483 <br>
+- Measurements of two-particle correlations in e+e- collisions at 91 GeV with ALEPH archived data, Phys.
+Rev. Lett., 123(Nov. 2019) 212002 <br>
+</p>
+<h1>Presentations</h1>
+<p>
+- The World of Open Data: ALEPH at LEP (Invited), Snowmass Computational Frontier Workshop, Online, August 2020 <br>
+- Advancing Unfolding with Machine Learning using Open Data, International Conference on High Energy Physics (ICHEP), Online, July 2020 <br>
+- Advancing Unfolding with Machine Learning using Open Data, BOOST 2020 Webinars, Online, July 2020 <br>
+- Two-Particle Correlation in Archived ALEPH Data, JETSCAPE, Texas A&M University, January 2019 <br>
+- Two-Particle Correlation in Archived ALEPH Data, International Conference on High Energy Physics (ICHEP),
+Seoul, July 2018 <br>
+ - Study of Events Shapes and Thrust in Archived ALEPH Data (Poster), International Conference on Ultra-relativistic Nucleus-Nucleus Collisions (Quark Matter), Venice, May 2018 <br>
 </p>
 <hr>
 
