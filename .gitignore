@@ -1,2 +1,5 @@
 # path
 vendor/bundle/
+
+# extension
+*.gem
