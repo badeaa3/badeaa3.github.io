@@ -25,19 +25,41 @@ titles:
   tr      : &TR       Ana Sayfa
   # @end locale config
 show_title: false
-articles:
+<!-- articles:
   data_source: paginator.posts
   article_type: BlogPosting
   show_cover: false
   show_excerpt: true
   show_readmore: true
-  show_info: true
+  show_info: true -->
 ---
-<div class="layout--home">
+<!-- <div class="layout--home">
   {%- include paginator.html -%}
 </div>
 <script>
   {%- include scripts/home.js -%}
 </script>
-
+ -->
+<!-- ---
+layout: default
+--- -->
+<div class="homepage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="centered-image">
+          <img src="assets/images/181205_MIT_AnthonyBadea_DSC07133.jpg" alt="Your Picture">
+        </div>
+      </div>
+      <!-- <div class="col-md-6">
+        <div class="work-picture">
+          <img src="path/to/your-work.jpg" alt="Your Work">
+        </div>
+        <div class="description">
+          <p>Your introductory text goes here.</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
 {{ content }}

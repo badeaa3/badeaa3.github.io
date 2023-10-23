@@ -2646,6 +2646,18 @@ input:focus {
   padding-left: 0;
 }
 
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Set a specific height to center the image vertically in the viewport */
+}
+
+.centered-image img {
+    max-width: 90%; /* Set the maximum width to ensure the image is not larger than its container */
+    max-height: 90%; /* Set the maximum height to maintain the aspect ratio */
+}
+
 .gallery {
   height: 100%;
   display: -webkit-box;
