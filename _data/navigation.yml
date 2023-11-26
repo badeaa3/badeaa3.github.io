@@ -1,5 +1,5 @@
 header:
-  - title: About
-    url: /archive.html
+  # - title: About
+  #   url: /archive.html
   - title: CV
     url: /assets/Badea-CV-2023.pdf
