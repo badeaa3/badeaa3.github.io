@@ -22,7 +22,7 @@ url     : https://badeaa3.github.io # the base hostname & protocol for your site
 baseurl : / # does not include hostname
 title   : Anthony Badea
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  Anthony Badea's site
 
 
 ## => Language and Timezone
@@ -159,7 +159,7 @@ pageview:
 ## => Search
 ##############################
 search:
-  provider: default # "default" (default), false, "google", "custom"
+  provider: false # "default" (default), false, "google", "custom"
 
   ## Google Custom Search Engine
   google:
