@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/images/181205_MIT_AnthonyBadea_DSC07133.jpg" alt="Image Caption" style="max-width: 525px; height: auto; pointer-events: none;">
+  <img src="/assets/images/181205_MIT_AnthonyBadea_DSC07133.jpg" alt="Image Caption" style="max-width: 65%; height: auto; pointer-events: none;">
 </p>
 
 <!-- <div style="display: flex;">
