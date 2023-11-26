@@ -34,7 +34,7 @@ timezone: Europe/Zurich # see https://en.wikipedia.org/wiki/List_of_tz_database_
 ## => Author and Social
 ##############################
 author:
-  type      : Harvard University
+  type      : University of Chicago
   name      : Anthony Badea
   url       :
   avatar    : # path or url of avatar image (square)

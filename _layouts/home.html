@@ -1,65 +1,24 @@
 ---
-layout: articles
-titles:
-  # @start locale config
-  en      : &EN       Home
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  主页
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  主頁
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       홈
-  ko-KR   : *KO
-  fr      : &FR       Accueil
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
-  tr      : &TR       Ana Sayfa
-  # @end locale config
-show_title: false
-<!-- articles:
+layout: page
+title:
+show_title: true
+show_edit_on_github: false
+mathjax: true
+header: true
+lightbox: true
+articles:
   data_source: paginator.posts
   article_type: BlogPosting
-  show_cover: false
+  show_cover: true
   show_excerpt: true
   show_readmore: true
-  show_info: true -->
+  show_info: true
 ---
-<!-- <div class="layout--home">
+<div class="layout--home">
   {%- include paginator.html -%}
 </div>
 <script>
   {%- include scripts/home.js -%}
 </script>
- -->
-<!-- ---
-layout: default
---- -->
-<div class="homepage">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="centered-image">
-          <img src="assets/images/181205_MIT_AnthonyBadea_DSC07133.jpg" alt="Your Picture">
-        </div>
-      </div>
-      <!-- <div class="col-md-6">
-        <div class="work-picture">
-          <img src="path/to/your-work.jpg" alt="Your Work">
-        </div>
-        <div class="description">
-          <p>Your introductory text goes here.</p>
-        </div>
-      </div> -->
-    </div>
-  </div>
-</div>
-{{ content }}
+
+{{ content | markdownify }}

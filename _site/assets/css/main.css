@@ -822,7 +822,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 8.3333333333%;
+    width: 0.0833333333;
   }
 }
 @media (min-width: 0) {
@@ -833,7 +833,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 16.6666666667%;
+    width: 0.1666666667;
   }
 }
 @media (min-width: 0) {
@@ -844,7 +844,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 25%;
+    width: 0.25;
   }
 }
 @media (min-width: 0) {
@@ -855,7 +855,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 33.3333333333%;
+    width: 0.3333333333;
   }
 }
 @media (min-width: 0) {
@@ -866,7 +866,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 41.6666666667%;
+    width: 0.4166666667;
   }
 }
 @media (min-width: 0) {
@@ -877,7 +877,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 50%;
+    width: 0.5;
   }
 }
 @media (min-width: 0) {
@@ -888,7 +888,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 58.3333333333%;
+    width: 0.5833333333;
   }
 }
 @media (min-width: 0) {
@@ -899,7 +899,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 66.6666666667%;
+    width: 0.6666666667;
   }
 }
 @media (min-width: 0) {
@@ -910,7 +910,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 75%;
+    width: 0.75;
   }
 }
 @media (min-width: 0) {
@@ -921,7 +921,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 83.3333333333%;
+    width: 0.8333333333;
   }
 }
 @media (min-width: 0) {
@@ -932,7 +932,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 91.6666666667%;
+    width: 0.9166666667;
   }
 }
 @media (min-width: 0) {
@@ -943,7 +943,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 100%;
+    width: 1;
   }
 }
 @media (min-width: 0) {
@@ -986,7 +986,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 8.3333333333%;
+    width: 0.0833333333;
   }
 }
 @media (min-width: 500px) {
@@ -997,7 +997,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 16.6666666667%;
+    width: 0.1666666667;
   }
 }
 @media (min-width: 500px) {
@@ -1008,7 +1008,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 25%;
+    width: 0.25;
   }
 }
 @media (min-width: 500px) {
@@ -1019,7 +1019,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 33.3333333333%;
+    width: 0.3333333333;
   }
 }
 @media (min-width: 500px) {
@@ -1030,7 +1030,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 41.6666666667%;
+    width: 0.4166666667;
   }
 }
 @media (min-width: 500px) {
@@ -1041,7 +1041,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 50%;
+    width: 0.5;
   }
 }
 @media (min-width: 500px) {
@@ -1052,7 +1052,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 58.3333333333%;
+    width: 0.5833333333;
   }
 }
 @media (min-width: 500px) {
@@ -1063,7 +1063,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 66.6666666667%;
+    width: 0.6666666667;
   }
 }
 @media (min-width: 500px) {
@@ -1074,7 +1074,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 75%;
+    width: 0.75;
   }
 }
 @media (min-width: 500px) {
@@ -1085,7 +1085,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 83.3333333333%;
+    width: 0.8333333333;
   }
 }
 @media (min-width: 500px) {
@@ -1096,7 +1096,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 91.6666666667%;
+    width: 0.9166666667;
   }
 }
 @media (min-width: 500px) {
@@ -1107,7 +1107,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 100%;
+    width: 1;
   }
 }
 @media (min-width: 500px) {
@@ -1150,7 +1150,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 8.3333333333%;
+    width: 0.0833333333;
   }
 }
 @media (min-width: 1024px) {
@@ -1161,7 +1161,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 16.6666666667%;
+    width: 0.1666666667;
   }
 }
 @media (min-width: 1024px) {
@@ -1172,7 +1172,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 25%;
+    width: 0.25;
   }
 }
 @media (min-width: 1024px) {
@@ -1183,7 +1183,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 33.3333333333%;
+    width: 0.3333333333;
   }
 }
 @media (min-width: 1024px) {
@@ -1194,7 +1194,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 41.6666666667%;
+    width: 0.4166666667;
   }
 }
 @media (min-width: 1024px) {
@@ -1205,7 +1205,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 50%;
+    width: 0.5;
   }
 }
 @media (min-width: 1024px) {
@@ -1216,7 +1216,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 58.3333333333%;
+    width: 0.5833333333;
   }
 }
 @media (min-width: 1024px) {
@@ -1227,7 +1227,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 66.6666666667%;
+    width: 0.6666666667;
   }
 }
 @media (min-width: 1024px) {
@@ -1238,7 +1238,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 75%;
+    width: 0.75;
   }
 }
 @media (min-width: 1024px) {
@@ -1249,7 +1249,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 83.3333333333%;
+    width: 0.8333333333;
   }
 }
 @media (min-width: 1024px) {
@@ -1260,7 +1260,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 91.6666666667%;
+    width: 0.9166666667;
   }
 }
 @media (min-width: 1024px) {
@@ -1271,7 +1271,7 @@ pre.lineno {
     -moz-flex: none;
     -ms-flex: none;
     flex: none;
-    width: 100%;
+    width: 1;
   }
 }
 @media (min-width: 1024px) {
@@ -2644,18 +2644,6 @@ input:focus {
 .card--flat .card__content {
   padding-top: 0;
   padding-left: 0;
-}
-
-.centered-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Set a specific height to center the image vertically in the viewport */
-}
-
-.centered-image img {
-    max-width: 90%; /* Set the maximum width to ensure the image is not larger than its container */
-    max-height: 90%; /* Set the maximum height to maintain the aspect ratio */
 }
 
 .gallery {
@@ -5776,16 +5764,16 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 }
 
 .extensions--video {
-  padding-top: 56.25%;
+  padding-top: 0.5625;
 }
 
 .extensions--slide {
-  padding-top: 81.3021702838%;
+  padding-top: 0.8130217028;
 }
 
 .extensions--demo {
   min-height: 340px;
-  padding-top: 56.25%;
+  padding-top: 0.5625;
 }
 
 .extensions--audio {
