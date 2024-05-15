@@ -1,7 +1,159 @@
 ---
-layout: home
-title: 
-header: true
+title: Home
 ---
 
-{% include index.md %}
+{% include head.html %}
+
+<body class="bg-light" data-bs-spy="scroll" data-bs-target="#navbar-global">
+    {% include nav.html %}
+    <div class="bg-dark container-fluid">
+        <div class="container col-xxl-8 px-4 py-5 " id="home">
+            <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
+                <div class="col-8 col-sm-8 col-lg-6">
+                    <img src="{{ site.baseurl }}/images/badea.jpg" class="d-block mx-lg-auto img-fluid" alt="Test" width="350" height="250"
+                        loading="lazy">
+                </div>
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-5 fw-bold lh-1 mb-3"> {{ site.short_title }}</h1>
+                    <h4 class="lh-1 mb-3">{{site.one_liner}}</h4>
+                    <p class="lead">{{ site.description | markdownify }}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light container-fluid">
+        <div class="px-4 my-5 " id="news">
+            <h1 class="display-5 fw-bold text-center">News</h1>
+            <div class="col-lg-6 mx-auto text-center">
+                <p class="lead mb-4">{{ site.news_byline | markdownify }}</p>
+            </div>
+            <div class="col-lg-5 mx-auto ">
+                {% for post in site.posts %}
+
+                <div class="row">
+                    <div class="card m-2 post-preview">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <img src="{{ site.baseurl }}{{ post.image }}" class="img-fluid rounded-start" alt="{{post.title}}"
+                                    style="max-width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">{{post.title}}</h4>
+                                    <p class="card-text">{{post.description}}</p>
+                                    <div class="d-flex justify-content-center"><a href="{{post.external_link}}"
+                                            class="btn btn-primary">Learn More</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-primary container-fluid">
+        <div class="px-4 pt-5 my-5 text-center text-light" id="projects">
+            <h1 class="display-5 fw-bold">Papers</h1>
+            <div class="col-lg-8 text-start mx-auto">
+                <ul class="citation-list">
+                    {% for paper in site.data.papers %}
+                    <li class="citation-list-item lead"> {{ paper | markdownify }} </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="px-4 pt-2 pb-5 my-5 text-center text-light">
+            <h1 class="display-5 fw-bold">Talks</h1>
+            <div class="col-lg-8 text-start mx-auto">
+                <ul class="citation-list">
+                    {% for talk in site.data.talks %}
+                    <li class="citation-list-item lead"> {{ talk | markdownify }} </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bg-light container-fluid">
+        <div class="px-4 py-5 my-5 text-center" id="people">
+            <h1 class="display-5 fw-bold pb-5">People</h1>
+            <div class="col-lg-6 mx-auto">
+                <hr>
+                {% assign sorted_orgs = site.data.people | sort %}
+                {% for org in sorted_orgs %}
+                <h4> {{ org[0] | replace: '_', ' ' | upcase }} </h4>
+                {% assign sorted_people = org[1] | sort %}
+                {% for person in sorted_people %}
+                <a href="javascript:showhide('{{ org[0] | replace: ' ', '_' }}-{{ person[0] | replace: ' ', '_' }}')">
+                    {{ person[1].name }}</a>
+                    ({% if person[1].degree != "" and person[1].degree != null %}{{person[1].degree }},
+                {% endif %}
+                {{ person[1].field }});&nbsp;
+                {% endfor %}
+
+                {% for person in sorted_people %}
+                <div id="{{ org[0] | replace: ' ', '_' }}-{{ person[0] | replace: ' ', '_' }}" style="display:none;">
+                    <br>
+                    <ul>
+                        <li> <b>Position</b>: {{ person[1].position }} </li>
+                        <li> <b>Interests</b>: {{ person[1].interests }} </li>
+                    </ul>
+                    {% if person[1].image != "" and person[1].image != null %}
+                    <a href="{{ person[1].image }}" class="image image-centered"><img src="{{ person[1].image }}"
+                            height="300" alt="" /></a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="bg-primary container-fluid">
+        <div class="px-4 py-5 my-5 text-center text-light" id="collaboration">
+            <h1 class="display-5 fw-bold">Collaboration</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">{{site.collaboration.byline}}</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="{{ site.baseurl }}/collaboration.html" class="btn btn-primary btn-lg px-4 gap-3">Code of Conduct</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   <!--  <div class="bg-light container-fluid">
+        <div class="px-4 py-5 my-5 text-center" id="sponsors">
+            <h1 class="pb-4 display-5 fw-bold">Sponsors and Partners</h1>
+            <div class="col-lg-6 mx-auto text-center">
+                <p class="lead mb-4">We are graciously funded by the following organizations:</p>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                
+				{% for org in site.data.sponsors %}
+				<img src="{{ site.baseurl }}{{ org.image }}" style="padding:10px; max-height: 120px; max-width: 120px;" alt="{{ org.name }}"/>
+				{% endfor %}
+                
+            </div>
+            <br/>
+            <div class="col-lg-6 mx-auto text-center">
+                <p class="lead mb-4">And are collaborating with these organizations:</p>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                
+				{% for org in site.data.partners %}
+				<img src="{{ site.baseurl }}{{ org.image }}" style="padding:10px; max-height: 120px; max-width: 120px;" alt="{{ org.name }}"/>
+				{% endfor %}
+                
+            </div>
+        </div>
+    </div> -->
+    {% include footer.html %}
+    <script>
+
+    </script>
+</body>

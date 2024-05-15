@@ -1,35 +1,26 @@
-
-<footer class="footer py-4 js-page-footer">
-  <div class="main">
-
-    {%- assign _site_author = site.author -%}
-    {%- if _site_author.type == 'organization' -%}
-      {%- assign _site_author_itemtype = 'http://schema.org/Organization' -%}
-    {%- else -%}
-      {%- assign _site_author_itemtype = 'http://schema.org/Person' -%}
-    {%- endif -%}
-
-    <div itemscope itemtype="{{ _site_author_itemtype }}">
-      <meta itemprop="name" content="{{ _site_author.name }}">
-      {%- assign _site_author_url = _site_author.url | default: '/'-%}
-      {%- include snippets/get-nav-url.html path=_site_author_url -%}
-      {%- assign _site_author_url = __return -%}
-      <meta itemprop="url" content="{{ _site_author_url }}">
-      {%- if _site_author.bio -%}
-        <meta itemprop="description" content="{{ _site_author.bio }}">
-      {%- endif -%}
-      <div class="footer__author-links">
-        {%- include author-links.html author=_site_author -%}
-      </div>
+<footer class="bg-dark container-fluid text-light text-center py-5">
+  <div class="row justify-content-around">
+    <div class="col-sm-2" style="padding-bottom: 40px">
+      <h2 style="padding-bottom: 10px">Contact</h2>
+      <h6>Got Questions?</h6>
+      <h6>Send us an email at:</h6>
+      <a class="text-light" href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
-    {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
-    {%- assign _locale_copyright_dates = __return -%}
-    <div class="site-info mt-2">
-      <div>
-        {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
-        {%- assign _locale_copyright_dates = __return -%}
-        {{ site.title }} - University of Chicago
-      </div>
+    <div class="col-sm-2" style="padding-bottom: 40px">
+      
+      <h2 style="padding-bottom: 10px">Resources</h2>
+      <ul class="list-group list-group-flush bg-dark">
+      {% for resource in site.footer.links %}
+      <li class="list-group-item text-light bg-dark"> <a class="text-light" href="{{ resource.link }}">{{ resource.name }}</a></li>
+      {% endfor %}
+      </ul>
     </div>
+
   </div>
+  <div class="container justify-content-center text-center">
+    <p class="align-center">&copy;
+      <script>document.write(new Date().getFullYear())</script> {{site.short_title}}. All rights reserved.
+    </p>
+  </div>
+
 </footer>
