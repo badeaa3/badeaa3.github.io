@@ -4,12 +4,12 @@ email: anthony.badea@cern.ch
 
 one_liner: Studying the building blocks of nature
 description: >
-  We are interested in studying exotic decays of the higgs boson, machine learning based new analysis techniques, and microelectronics for fundamental physics. 
+  I am interested in studying the higgs boson, inventing new machine learning based analysis techniques, and building microelectronics for fundamental physics. 
   I am a Research Associate at the [Enrico Fermi Institute](https://efi.uchicago.edu) through the [Schmidt AI in Science Fellowship](https://aiscience.uchicago.edu/fellows).
   I received my Ph.D. in physics from Harvard University in 2023 and dual B.S. in physics and mathematics from MIT in 2019.
 
 news_byline: >
-  Here is a snapshot of work that I'm excited by. 
+  Here are some research highlights.
 
 # collaboration:
 #   byline: We are a community that fosters knowledge transfer of accelerated and real-time artificial intelligence applications to fundamental science. By joining the community, you agree to abide by our codes of conduct and policies of collaboration.
@@ -17,7 +17,7 @@ news_byline: >
   
 
 navbar:
-  logo: /images/badea.jpg
+  logo: /images/favicon.ico
   links:
     - name: Home
       link: "#home" # Note that for links to autoscroll to anchors on the main page, only the #anchor is needed (no preceding slash)
