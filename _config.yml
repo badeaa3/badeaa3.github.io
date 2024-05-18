@@ -28,15 +28,15 @@ navbar:
     - name: Papers/Talks
       link: "#projects"
       autoscroll: true
-    # - name: People
-    #   link: "#people"
-    #   autoscroll: true
+    - name: Outreach
+      link: "#outreach"
+      autoscroll: true
     # - name: Collaboration
     #   link: "#collaboration"
     #   autoscroll: true
-    # - name: Sponsors/Partners
-    #   link: '#sponsors'
-    #   autoscroll: true
+    - name: Sponsors/Partners
+      link: '#sponsors'
+      autoscroll: true
     - name: Contact
       link: "mailto:anthony.badea@cern.ch"
       autoscroll: false

@@ -60,7 +60,7 @@ title: Home
 
     <div class="bg-primary container-fluid">
         <div class="px-4 pt-5 my-5 text-center text-light" id="projects">
-            <h1 class="display-5 fw-bold">Papers</h1>
+            <h1 class="display-5 fw-bold">Selected Papers</h1>
             <div class="col-lg-8 text-start mx-auto">
                 <ul class="citation-list">
                     {% for paper in site.data.papers %}
@@ -70,11 +70,25 @@ title: Home
             </div>
         </div>
         <div class="px-4 pt-2 pb-5 my-5 text-center text-light">
-            <h1 class="display-5 fw-bold">Talks</h1>
+            <h1 class="display-5 fw-bold">Selected Talks</h1>
             <div class="col-lg-8 text-start mx-auto">
                 <ul class="citation-list">
                     {% for talk in site.data.talks %}
                     <li class="citation-list-item lead"> {{ talk | markdownify }} </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="bg-light container-fluid">
+        <div class="px-4 pt-5 my-5 text-center" id="outreach">
+            <h1 class="display-5 fw-bold">Outreach</h1>
+            <div class="col-lg-8 text-start mx-auto">
+                <ul class="citation-list">
+                    {% for paper in site.data.outreach %}
+                    <li class="citation-list-item lead"> {{ paper | markdownify }} </li>
                     {% endfor %}
                 </ul>
             </div>
@@ -126,20 +140,20 @@ title: Home
             </div>
         </div>
     </div> -->
-   <!--  <div class="bg-light container-fluid">
+    <div class="bg-light container-fluid">
         <div class="px-4 py-5 my-5 text-center" id="sponsors">
             <h1 class="pb-4 display-5 fw-bold">Sponsors and Partners</h1>
             <div class="col-lg-6 mx-auto text-center">
-                <p class="lead mb-4">We are graciously funded by the following organizations:</p>
+                <p class="lead mb-4">I am graciously funded by the following organizations:</p>
             </div>
             <div class="col-lg-6 mx-auto">
                 
 				{% for org in site.data.sponsors %}
-				<img src="{{ site.baseurl }}{{ org.image }}" style="padding:10px; max-height: 120px; max-width: 120px;" alt="{{ org.name }}"/>
+				<img src="{{ site.baseurl }}{{ org.image }}" style="padding:10px; max-height: 150px; max-width: 150px;" alt="{{ org.name }}"/>
 				{% endfor %}
                 
             </div>
-            <br/>
+            <!-- <br/>
             <div class="col-lg-6 mx-auto text-center">
                 <p class="lead mb-4">And are collaborating with these organizations:</p>
             </div>
@@ -149,9 +163,9 @@ title: Home
 				<img src="{{ site.baseurl }}{{ org.image }}" style="padding:10px; max-height: 120px; max-width: 120px;" alt="{{ org.name }}"/>
 				{% endfor %}
                 
-            </div>
+            </div> -->
         </div>
-    </div> -->
+    </div>
     {% include footer.html %}
     <script>
 
