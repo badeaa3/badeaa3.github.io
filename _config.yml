@@ -1,6 +1,6 @@
 title: Anthony Badea
 short_title: Anthony Badea
-email: anthony.badea@cern.ch
+email: badea@uchicago.edu
 
 one_liner: Studying the building blocks of nature
 description: >
@@ -38,7 +38,7 @@ navbar:
       link: '#sponsors'
       autoscroll: true
     - name: Contact
-      link: "mailto:anthony.badea@cern.ch"
+      link: "mailto:badea@uchicago.edu"
       autoscroll: false
 
 footer:
