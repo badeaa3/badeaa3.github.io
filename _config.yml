@@ -21,7 +21,7 @@ news_byline: >
   
 
 navbar:
-  logo: /images/favicon.ico
+  # logo: /images/favicon.ico
   links:
     # - name: Home
     #   link: "#home" # Note that for links to autoscroll to anchors on the main page, only the #anchor is needed (no preceding slash)
