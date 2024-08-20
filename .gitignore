@@ -1,0 +1,9 @@
+# path
+vendor/bundle/
+.bundle/
+
+# extension
+*.gem
+
+# files
+.DS_Store
