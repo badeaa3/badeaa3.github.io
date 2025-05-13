@@ -1,26 +1,24 @@
-<nav id="navbar-global" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-	<div class="container justify-content-between">
-		<a class="navbar-brand" href="{{ site.baseurl }}/">
-			<!-- <img src="{{ site.baseurl }}{{ site.navbar.logo }}" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
-			&nbsp;{{site.title}}
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-			<ul class="navbar-nav">
-				{% for navitem in site.navbar.links %}
-				<li class="nav-item">
-					{% if page.title != 'Home' && navitem.autoscroll %}
-					<a class="nav-link" href="{{ site.baseurl }}/{{ navitem.link }}">{{ navitem.name }}</a>
-					{% else %}
-					<a class="nav-link" href="{{ navitem.link }}">{{ navitem.name }}</a>
-					{% endif %}
-				</li>
-				{% endfor %}
-
-				</li>
-			</ul>
+<nav id="navbar-global" class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
+	<div class="container">
+		<div class="content-section d-flex justify-content-between w-100">
+			<a class="navbar-brand" href="{{ site.baseurl }}/">{{site.title}}</a>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
+					{% for navitem in site.navbar.links %}
+					<li class="nav-item">
+						{% if navitem.link contains 'http' or navitem.link contains 'mailto:' %}
+						<a class="nav-link" href="{{ navitem.link }}">{{ navitem.name }}</a>
+						{% else %}
+						<a class="nav-link" href="{{ site.baseurl }}{{ navitem.link }}">{{ navitem.name }}</a>
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 		</div>
+	</div>
 </nav>
