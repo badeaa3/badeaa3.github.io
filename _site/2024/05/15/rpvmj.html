@@ -7,45 +7,252 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/icon">
     <link rel="icon" href="favicon.ico" type="image/icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CDN Imports (CSS & JS) -->
+    <!-- CDN Imports -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <!-- Custom JS -->
     <script src="/js/main.js"></script>
+
+    <style>
+        :root {
+            --header-height: 100px;
+            --header-bg: #6c757d;
+            --content-spacing: 4rem;
+            --content-width: 900px;
+            --footer-height: 140px;
+        }
+
+        body {
+            padding-top: var(--header-height);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        /* Header styles */
+        .navbar {
+            background-color: var(--header-bg) !important;
+            padding: 0;
+            height: var(--header-height);
+            font-size: 1.8rem;
+        }
+
+        .navbar .container {
+            max-width: 100%;
+            padding: 0 2rem;
+            height: 100%;
+        }
+
+        .content-section {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-nav {
+            gap: 2.5rem;
+        }
+
+        .nav-link {
+            font-size: 1.8rem;
+            padding: 0 !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        /* Main content */
+        main {
+            padding: var(--content-spacing) 0;
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-fluid {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            margin: 2rem 0 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 4px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .description {
+            font-size: 1.4rem;
+            line-height: 1.7;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .description p {
+            margin-bottom: 3rem;
+        }
+
+        /* Ensure double line breaks in the content create proper paragraph spacing */
+        .description p + p {
+            margin-top: -1.5rem;
+        }
+
+        .description a {
+            color: #2962ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .description a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--header-bg);
+            height: var(--footer-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            flex-shrink: 0;
+            margin-top: auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            :root {
+                --content-spacing: 2rem;
+                --header-height: 90px;
+            }
+
+            .navbar .container {
+                padding: 0 1rem;
+            }
+
+            .container-fluid {
+                padding: 0 1rem;
+            }
+
+            .navbar-nav {
+                gap: 1.5rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .nav-link {
+                font-size: 1.5rem;
+            }
+
+            .social-links a {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero-image {
+                max-width: 100%;
+                padding: 0 1rem;
+            }
+
+            .description {
+                font-size: 1.5rem;
+                line-height: 1.6;
+            }
+
+            .description p {
+                margin-bottom: 2.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-light">
-  <nav id="navbar-global" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-	<div class="container justify-content-between">
-		<a class="navbar-brand" href="/">
-			<!-- <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
-			&nbsp;Anthony Badea
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-			<ul class="navbar-nav">
-				
-				<li class="nav-item">
+  <nav id="navbar-global" class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
+	<div class="container">
+		<div class="content-section d-flex justify-content-between w-100">
+			<a class="navbar-brand" href="/">Anthony Badea</a>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
 					
-					<a class="nav-link" href="/mailto:badea@uchicago.edu">Contact</a>
+					<li class="nav-item">
+						
+						<a class="nav-link" href="/about.html">About</a>
+						
+					</li>
 					
-				</li>
-				
-
-				</li>
-			</ul>
+					<li class="nav-item">
+						
+						<a class="nav-link" href="/cv.html">CV</a>
+						
+					</li>
+					
+					<li class="nav-item">
+						
+						<a class="nav-link" href="mailto:badea@uchicago.edu">Contact</a>
+						
+					</li>
+					
+				</ul>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 		</div>
+	</div>
 </nav>
   <div class="bg-light container-fluid">
     <div class="px-4 py-5 my-5 " >
@@ -63,32 +270,32 @@
       </div>
     </div>
   </div>
-  <footer class="bg-dark container-fluid text-light text-center py-5">
-  <div class="row justify-content-around">
-    <div class="col-sm-2" style="padding-bottom: 40px">
-      <h2 style="padding-bottom: 10px">Contact</h2>
-      <h6>Interested in doing research or have questions?</h6>
-      <h6>Send me an email at:</h6>
-      <a class="text-light" href="mailto:badea@uchicago.edu">badea@uchicago.edu</a>
+  <footer class="bg-secondary py-4">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <div class="social-links mb-3">
+                    <a href="mailto:badea@uchicago.edu" class="mx-2">
+                        <i class="fas fa-envelope fa-2x text-white"></i>
+                    </a>
+                    <a href="https://github.com/badeaa3" class="mx-2">
+                        <i class="fab fa-github fa-2x text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anthony-badea" class="mx-2">
+                        <i class="fab fa-linkedin fa-2x text-white"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" class="mx-2">
+                        <i class="fas fa-graduation-cap fa-2x text-white"></i>
+                    </a>
+                </div>
+                <p class="text-white mb-0">Anthony Badea — Research Fellow, Enrico Fermi Institute</p>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-2" style="padding-bottom: 40px">
-      
-      <h2 style="padding-bottom: 10px">Resources</h2>
-      <ul class="list-group list-group-flush bg-dark">
-      
-      <li class="list-group-item text-light bg-dark"> <a class="text-light" href="https://github.com/badeaa3">GitHub</a></li>
-      
-      </ul>
-    </div>
-
-  </div>
-  <div class="container justify-content-center text-center">
-    <p class="align-center">&copy;
-      <script>document.write(new Date().getFullYear())</script> Anthony Badea. All rights reserved.
-    </p>
-  </div>
-
 </footer>
+
+<!-- Add Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
 
 
 </body>

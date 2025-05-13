@@ -4,11 +4,11 @@ email: badea@uchicago.edu
 
 # one_liner: Studying the building blocks of nature
 description: >
-  Ultra-relativistic particle collisions provide unique access to the properties of quantum field theories at high energies and recreate in the laboratory the conditions of the early universe. Measurements at facilities such as the Large Hadron Collider have established that the Standard Model is a highly accurate theory of nature. There are, however, still major outstanding questions related to the early universe and the fields that drove its dynamics. To answer these questions, I work on accelerator-based experiments, physics measurements, and AI-ingrained technology.
-  
+  Anthony Badea is a research fellow at the [Enrico Fermi Institute](https://efi.uchicago.edu), where he works on particle physics, nuclear physics, and emerging technologies.
 
-  I am currently a Research Associate at the [Enrico Fermi Institute](https://efi.uchicago.edu) through the [Schmidt Sciences Foundation](https://aiscience.uchicago.edu/fellows).
-  I received my Ph.D. in physics from Harvard University in 2023 and dual B.S. in physics and mathematics from MIT in 2019.
+  Previously, Anthony has conducted measurements in electron, proton, and nuclei collisions to study the properties of the strong force and the matter-antimatter asymmetry of the universe. He has also been heavily involved in deploying new detector and readout electronics for experiments.
+
+  Anthony earned his Ph.D. in physics from Harvard University as a Prize Fellow and dual B.S. degrees in physics and mathematics from MIT. 
 
 # I am interested in studying the higgs boson, inventing new machine learning based analysis techniques, and building microelectronics for fundamental physics. 
 
@@ -23,32 +23,25 @@ news_byline: >
 navbar:
   # logo: /images/favicon.ico
   links:
-    # - name: Home
-    #   link: "#home" # Note that for links to autoscroll to anchors on the main page, only the #anchor is needed (no preceding slash)
-    #   autoscroll: true
-    # - name: News
-    #   link: "#news"
-    #   autoscroll: true
-    # - name: Papers/Talks
-    #   link: "#projects"
-    #   autoscroll: true
-    # - name: Outreach
-    #   link: "#outreach"
-    #   autoscroll: true
-    # - name: Collaboration
-    #   link: "#collaboration"
-    #   autoscroll: true
-    # - name: Sponsors/Partners
-    #   link: '#sponsors'
-    #   autoscroll: true
+    - name: About
+      link: /about.html
+      autoscroll: false
+    - name: CV
+      link: /cv.html
+      autoscroll: false
     - name: Contact
       link: "mailto:badea@uchicago.edu"
       autoscroll: false
 
-footer:
-  links:
-    - name: GitHub
-      link: https://github.com/badeaa3
+social:
+  email: badea@uchicago.edu
+  github: badeaa3
+  linkedin: anthony-badea
+  google_scholar: YOUR_SCHOLAR_ID
+  twitter: YOUR_TWITTER
+  mit: YOUR_MIT_PAGE
 
+footer:
+  title: Research Fellow, Enrico Fermi Institute
 
 exclude: ["CNAME", "license.txt", "README.md"]

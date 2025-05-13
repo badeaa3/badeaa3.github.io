@@ -4,24 +4,28 @@ title: Home
 
 {% include head.html %}
 
-<body class="bg-light" data-bs-spy="scroll" data-bs-target="#navbar-global">
+<body>
     {% include nav.html %}
-    <div class="bg-dark container-fluid">
-        <div class="container col-xxl-8 px-4 py-5 " id="home">
-            <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
-                <div class="col-8 col-sm-8 col-lg-6">
-                    <img src="{{ site.baseurl }}/images/badea.jpg" class="d-block mx-lg-auto img-fluid" alt="Test" width="350" height="250"
-                        loading="lazy">
+    <main>
+        <div class="container">
+            <div class="content-section">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-image">
+                            <img src="{{ site.baseurl }}/images/badea.jpg" class="img-fluid" alt="Anthony Badea">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 text-white">
-                    <h1 class="display-5 fw-bold lh-1 mb-3"> {{ site.short_title }}</h1>
-                    <h4 class="lh-1 mb-3">{{site.one_liner}}</h4>
-                    <p class="lead">{{ site.description | markdownify }}</p>
-
+                <div class="row">
+                    <div class="col-12">
+                        <div class="description">
+                            {{ site.description | markdownify }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <!-- <div class="bg-light container-fluid">
         <div class="px-4 my-5 " id="news">
             <h1 class="display-5 fw-bold text-center">News</h1>
@@ -179,3 +183,5 @@ title: Home
 
     </script>
 </body>
+
+</html>
